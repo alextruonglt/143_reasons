@@ -1,27 +1,60 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap');
+
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    --browntext:#390007;
+    --pinktext:#FFCAC2;
+    --whitetext:#FFFFFF;
+    --standardfont: "Domaine", serif; 
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+body{
+  color: var(--browntext);
+  font-family: var(--standardfont);
+}
+
+ol{
+  padding: 0;
+  margin: 0;
+}
+
+
+.content_section{
+  background-image: url("/bg.svg"); /* Correct path */
+  background-size: cover; /* Optional, to control how the image scales */
+  background-position: center; /* Optional, to center the background */
+}
+
+.head_text{
+  font-size: 5rem;
+  text-align: center;
+}
+
+.reasons_li{
+  font-size: 2rem;
+  line-height: 5rem;
+  list-style-position: inside;
+}
+
+
+@media screen and (max-width: 640px) {
+  
+  .head_text{
+    font-size: 3rem;
   }
-}
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .reasons_li{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    list-style-position: inside;
+    padding: 1rem 0;
   }
+
+  .createdby_container{
+    margin-top: 1rem;
+  }
+  
 }
