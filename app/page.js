@@ -48,15 +48,15 @@ export default function Home() {
 	const currentYear = new Date().getFullYear()
 	return (
 		<>
-			<div className="my-14 home_section flex flex-col items-center justify-center n">
+			<section className="my-14 home_section flex flex-col items-center justify-center n">
 				<Image
 					src="/hero.png"
 					width={620}
 					height={620}
-					alt="Picture of the author"
+					alt="Couple Embracing Eachother"
 				/>
 				<h1 className="head_text">{title}</h1>
-				<div className="content_section px-24">
+				<section className="content_section px-24">
 					{paragraphEl}
 					<div id="reason_container" className="0 my-3">
 						<ol className="list-decimal ">{reasonsEl}</ol>
@@ -88,8 +88,8 @@ export default function Home() {
 							. {currentYear}.
 						</p>
 					</div>
-				</div>
-			</div>
+				</section>
+			</section>
 		</>
 	)
 }

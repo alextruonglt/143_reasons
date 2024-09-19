@@ -4,14 +4,15 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build next && next-sitemap",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "next": "14.2.12",
+    "next-sitemap": "^4.2.3",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.12"
+    "react-dom": "^18"
   },
   "devDependencies": {
     "postcss": "^8",
