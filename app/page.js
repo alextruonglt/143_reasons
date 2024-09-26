@@ -57,11 +57,16 @@ export default function Home() {
 				/>
 				<h1 className="head_text">{title}</h1>
 				<section className="content_section px-24">
-					{paragraphEl}
-					<div id="reason_container" className="0 my-3">
-						<ol className="list-decimal ">{reasonsEl}</ol>
+					<div id="paragraph" className="py-24">
+						{paragraphEl}
 					</div>
-					{closingEl}
+					<div id="reason_container" className="0 my-3">
+						<ol className="list-decimal">{reasonsEl}</ol>
+					</div>
+					<div id="closingTextContainer" className="mt-24">
+						{closingEl}
+					</div>
+
 					<div id="signature_container" className="py-5 ">
 						{signatureEl}
 					</div>
