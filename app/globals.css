@@ -22,20 +22,30 @@ ol{
 }
 
 
-.content_section{
-  background-image: url("/bg.svg"); /* Correct path */
-  background-size: cover; /* Optional, to control how the image scales */
-  background-position: center; /* Optional, to center the background */
+.bg-section{
+  background-image: url("/bg.svg");
+  background-size: cover;
+  background-position: center;
 
+}
+
+
+.content_section{
+  padding-left: 2rem; /* Adjust based on your layout */
+  padding-right: 2rem;
+  max-width: 960px; /* Control the maximum width */
+  margin-left: auto; /* Center the content */
+  margin-right: auto;
+  
 }
 
 
 
 
+
 .head_text{
-  font-size: 6rem;
+  font-size: 4.5rem;
   text-align: left;
-  word-wrap: center;
   max-width: 100%; /* Set width to take up the entire container */
   margin: 0; /* Remove any default margin */
   padding: 0; /* Optional: remove default padding */

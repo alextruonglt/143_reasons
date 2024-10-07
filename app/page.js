@@ -55,47 +55,51 @@ export default function Home() {
 					height={620}
 					alt="Couple Embracing Eachother"
 				/>
+				<section className="bg-section w-full">
+					<section className="content_section px-24">
+						<div className="headContainter">
+							<h1 className="head_text ">{title}</h1>
+						</div>
+						<div id="paragraph" className="py-24 ">
+							{paragraphEl}
+						</div>
+						<div id="reason_container" className="0 my-3">
+							<ol className="list-decimal">{reasonsEl}</ol>
+						</div>
+						<div id="closingTextContainer" className="mt-24">
+							{closingEl}
+						</div>
 
-				<section className="content_section px-24">
-					<div className="headContainter">
-						<h1 className="head_text ">{title}</h1>
-					</div>
-					<div id="paragraph" className="py-24 ">
-						{paragraphEl}
-					</div>
-					<div id="reason_container" className="0 my-3">
-						<ol className="list-decimal">{reasonsEl}</ol>
-					</div>
-					<div id="closingTextContainer" className="mt-24">
-						{closingEl}
-					</div>
-
-					<div id="signature_container" className="py-5 ">
-						{signatureEl}
-					</div>
-					<div id="createdby_container" className="createdby_container mt-12 ">
-						<p>
-							If you want to create even more joy in your relationship, visit{" "}
-							<a
-								className="underline"
-								target="_blank"
-								href="https://BetterTopics.com"
-							>
-								BetterTopics.com
-							</a>
-						</p>
-						<p>
-							Designed & Developed by{" "}
-							<a
-								className="underline"
-								target="_blank"
-								href="https://wesrom.com/"
-							>
-								Wesrom Corporation
-							</a>
-							. {currentYear}.
-						</p>
-					</div>
+						<div id="signature_container" className="py-5 ">
+							{signatureEl}
+						</div>
+						<div
+							id="createdby_container"
+							className="createdby_container mt-12 "
+						>
+							<p>
+								If you want to create even more joy in your relationship, visit{" "}
+								<a
+									className="underline"
+									target="_blank"
+									href="https://BetterTopics.com"
+								>
+									BetterTopics.com
+								</a>
+							</p>
+							<p>
+								Designed & Developed by{" "}
+								<a
+									className="underline"
+									target="_blank"
+									href="https://wesrom.com/"
+								>
+									Wesrom Corporation
+								</a>
+								. {currentYear}.
+							</p>
+						</div>
+					</section>
 				</section>
 			</section>
 		</>
