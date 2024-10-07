@@ -55,9 +55,12 @@ export default function Home() {
 					height={620}
 					alt="Couple Embracing Eachother"
 				/>
-				<h1 className="head_text">{title}</h1>
+
 				<section className="content_section px-24">
-					<div id="paragraph" className="py-24">
+					<div className="headContainter">
+						<h1 className="head_text ">{title}</h1>
+					</div>
+					<div id="paragraph" className="py-24 ">
 						{paragraphEl}
 					</div>
 					<div id="reason_container" className="0 my-3">
